@@ -1,54 +1,54 @@
 [gd_scene format=3 uid="uid://bulicvnta3fpw"]
 
-[ext_resource type="Script" uid="uid://bkmlgghv6w31h" path="res://scripts/movimiento_detective/player.gd" id="1_umbo0"]
-[ext_resource type="Texture2D" uid="uid://cjk6n3wrv8se0" path="res://assets/art/detective/movimientos_detective.png" id="2_fk2nk"]
+[ext_resource type="Script" uid="uid://bkmlgghv6w31h" path="res://scripts/movimiento_detective/player.gd" id="1_gymo3"]
+[ext_resource type="Texture2D" uid="uid://cjk6n3wrv8se0" path="res://assets/art/detective/movimientos_detective.png" id="2_5ntqa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2w8bi"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(0, 48, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rk4ad"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(16, 48, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mvent"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(32, 48, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3xvd7"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(0, 16, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ovwfi"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(16, 16, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_878da"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(32, 16, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e03ic"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_66m4v"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_avxxl"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hctq4"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(0, 32, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jvml"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(16, 32, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gsvmc"]
-atlas = ExtResource("2_fk2nk")
+atlas = ExtResource("2_5ntqa")
 region = Rect2(32, 32, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7186j"]
@@ -113,10 +113,10 @@ animations = [{
 [node name="Game" type="Node2D" unique_id=561389585]
 
 [node name="Detective" type="CharacterBody2D" parent="." unique_id=1399119707]
-script = ExtResource("1_umbo0")
+script = ExtResource("1_gymo3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Detective" unique_id=2119116593]
-position = Vector2(155, 268)
+position = Vector2(596, 322)
 scale = Vector2(8, 8.625)
 sprite_frames = SubResource("SpriteFrames_7186j")
 animation = &"Move_down"
