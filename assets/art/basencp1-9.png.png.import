@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjk6n3wrv8se0"
-path="res://.godot/imported/movimientos_detective.png-b5bf485c862645916b9a7ab9a4926515.ctex"
+uid="uid://c5dwobc6p62m5"
+path="res://.godot/imported/basencp1-9.png.png-3137df8416f9f2c528689d9bf606e3fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/movimientos_detective.png"
-dest_files=["res://.godot/imported/movimientos_detective.png-b5bf485c862645916b9a7ab9a4926515.ctex"]
+source_file="res://assets/art/basencp1-9.png.png"
+dest_files=["res://.godot/imported/basencp1-9.png.png-3137df8416f9f2c528689d9bf606e3fa.ctex"]
 
 [params]
 
