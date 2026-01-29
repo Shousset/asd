@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bulicvnta3fpw"]
+
+[ext_resource type="Script" uid="uid://bkmlgghv6w31h" path="res://scripts/movimiento_detective/player.gd" id="1_umbo0"]
+
+[node name="Game" type="Node2D" unique_id=561389585]
+
+[node name="Detective" type="CharacterBody2D" parent="." unique_id=1399119707]
+script = ExtResource("1_umbo0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2079837696]
