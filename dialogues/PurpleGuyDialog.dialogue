@@ -1,0 +1,11 @@
+~ start
+NPC 1: [[Wassup gang|Yo how's it going|What's going on fella]], this is some dialogue.
+Nathan: Here are some choices.
+- First one
+	Nathan: You picked the first one buddy.
+- Second one
+	Nathan: You picked the second one huh.
+- Start again => start
+- End the conversation => END
+Nathan: See ya.
+=> END
