@@ -1,21 +1,21 @@
-[gd_scene format=3 uid="uid://ds1hnljb34d18"]
+[gd_scene format=3 uid="uid://o52c5n15gjo5"]
 
-[ext_resource type="Texture2D" uid="uid://dccv1l6golbql" path="res://assets/art/basencp1-7.png.png" id="1_b8exc"]
-[ext_resource type="Script" uid="uid://cj2e5wflurh6t" path="res://scripts/npc_interactions/purple_guy.gd" id="1_w3hwk"]
-[ext_resource type="Resource" uid="uid://cqqy1s2ck084t" path="res://dialogues/PurpleGuyDialog.dialogue" id="2_tr7xw"]
-[ext_resource type="Texture2D" uid="uid://ckfyrcfgyedux" path="res://assets/art/basencp1-8.png.png" id="2_w3hwk"]
-[ext_resource type="Texture2D" uid="uid://c5dwobc6p62m5" path="res://assets/art/basencp1-9.png.png" id="3_tr7xw"]
+[ext_resource type="Script" uid="uid://cj2e5wflurh6t" path="res://scripts/npc_interactions/purple_guy.gd" id="1_wlwa6"]
+[ext_resource type="Resource" uid="uid://cqqy1s2ck084t" path="res://dialogues/PurpleGuyDialog.dialogue" id="2_av24o"]
+[ext_resource type="Texture2D" uid="uid://dccv1l6golbql" path="res://assets/art/basencp1-7.png.png" id="3_rjd4v"]
+[ext_resource type="Texture2D" uid="uid://ckfyrcfgyedux" path="res://assets/art/basencp1-8.png.png" id="4_q5kcl"]
+[ext_resource type="Texture2D" uid="uid://c5dwobc6p62m5" path="res://assets/art/basencp1-9.png.png" id="5_qawda"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uliok"]
-atlas = ExtResource("1_b8exc")
+atlas = ExtResource("3_rjd4v")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mrrs1"]
-atlas = ExtResource("2_w3hwk")
+atlas = ExtResource("4_q5kcl")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ls12w"]
-atlas = ExtResource("3_tr7xw")
+atlas = ExtResource("5_qawda")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x4nek"]
@@ -38,15 +38,16 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tr7xw"]
 radius = 15.0
 
-[node name="PurpleGuy" type="Area2D" unique_id=133418455]
+[node name="BlueGuy" type="Area2D" unique_id=133418455]
 collision_layer = 3
-script = ExtResource("1_w3hwk")
-dialogue_resource = ExtResource("2_tr7xw")
+script = ExtResource("1_wlwa6")
+dialogue_resource = ExtResource("2_av24o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=164271310]
 sprite_frames = SubResource("SpriteFrames_x4nek")
 autoplay = "default"
 frame_progress = 0.41821542
+script = ExtResource("1_wlwa6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=89254027]
 shape = SubResource("CapsuleShape2D_tr7xw")

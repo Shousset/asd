@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btg67gcowfu03"
-path="res://.godot/imported/abajo3.png-68bbc10f6606e7c74c4108e296b80b64.ctex"
+uid="uid://dq0ig6hw47nqi"
+path="res://.godot/imported/castillo.png-2c1097c68fc3511869ed68b9a7006735.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/abajo3.png"
-dest_files=["res://.godot/imported/abajo3.png-68bbc10f6606e7c74c4108e296b80b64.ctex"]
+source_file="res://assets/art/map/castillo.png"
+dest_files=["res://.godot/imported/castillo.png-2c1097c68fc3511869ed68b9a7006735.ctex"]
 
 [params]
 
