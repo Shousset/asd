@@ -114,10 +114,11 @@ animations = [{
 script = ExtResource("1_we816")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=32627671]
-position = Vector2(596, 322)
-scale = Vector2(8, 8.625)
 sprite_frames = SubResource("SpriteFrames_7186j")
 animation = &"Move_down"
-frame_progress = 0.9519232
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1323738157]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1288344103]
+zoom = Vector2(5, 5)
+position_smoothing_enabled = true

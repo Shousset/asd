@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var _animated_sprite = $AnimatedSprite2D
 	
-const speed = 300 # Increased for visible movement
+const speed = 60 # Increased for visible movement
 var current_dir = null
 
 func _physics_process(delta):
