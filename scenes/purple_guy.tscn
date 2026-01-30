@@ -38,12 +38,6 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_tr7xw"]
 radius = 19.104973
 
-[sub_resource type="LabelSettings" id="LabelSettings_tr7xw"]
-line_spacing = 0.0
-font_size = 6
-font_color = Color(0, 0, 0, 1)
-shadow_size = 0
-
 [node name="PurpleGuy" type="Area2D" unique_id=133418455]
 collision_layer = 3
 script = ExtResource("1_w3hwk")
@@ -57,13 +51,297 @@ frame_progress = 0.41821542
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=89254027]
 shape = SubResource("CircleShape2D_tr7xw")
 
-[node name="Label" type="Label" parent="." unique_id=1170001198]
-texture_filter = 1
-offset_left = -13.0
-offset_top = -28.0
-offset_right = 14.0
-offset_bottom = -10.0
-text = "Hablar 
-[Espacio]"
-label_settings = SubResource("LabelSettings_tr7xw")
-horizontal_alignment = 1
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1759456332]
+z_index = 5
+offset_left = -17.0
+offset_top = -18.0
+offset_right = 16.0
+offset_bottom = -11.0
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect" unique_id=1241524432]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 2.0
+offset_bottom = 4.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect" unique_id=1974661589]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 3.0
+offset_bottom = 1.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect/ColorRect" unique_id=892233571]
+layout_mode = 0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect/ColorRect" unique_id=1001429340]
+layout_direction = 3
+layout_mode = 0
+offset_left = -2.0
+offset_top = 2.0
+offset_right = -1.0
+offset_bottom = 5.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect/ColorRect/ColorRect2" unique_id=1427203450]
+layout_direction = 3
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 3.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect/ColorRect2/ColorRect2" unique_id=708414007]
+layout_direction = 3
+layout_mode = 0
+offset_left = -5.0
+offset_top = -4.0
+offset_right = -2.0
+offset_bottom = -3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect/ColorRect2/ColorRect2/ColorRect" unique_id=1869422548]
+layout_direction = 3
+layout_mode = 0
+offset_top = 2.0
+offset_right = 3.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect/ColorRect2/ColorRect2/ColorRect/ColorRect" unique_id=605074773]
+layout_direction = 3
+layout_mode = 0
+offset_left = 2.0
+offset_top = -2.0
+offset_right = 3.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect/ColorRect2/ColorRect2/ColorRect/ColorRect/ColorRect" unique_id=1327006107]
+layout_direction = 3
+layout_mode = 0
+offset_left = -2.0
+offset_right = -1.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect" unique_id=145721257]
+layout_direction = 3
+layout_mode = 0
+offset_left = 21.0
+offset_top = 1.0
+offset_right = 24.0
+offset_bottom = 2.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect2" unique_id=321601626]
+layout_direction = 3
+layout_mode = 0
+offset_top = 2.0
+offset_right = 3.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect2/ColorRect" unique_id=201910980]
+layout_direction = 3
+layout_mode = 0
+offset_left = 2.0
+offset_top = -2.0
+offset_right = 3.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect2/ColorRect/ColorRect" unique_id=275708545]
+layout_direction = 3
+layout_mode = 0
+offset_left = -2.0
+offset_right = -1.0
+offset_bottom = 5.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect" unique_id=535626872]
+layout_direction = 3
+layout_mode = 0
+offset_left = 19.0
+offset_top = 1.0
+offset_right = 20.0
+offset_bottom = 6.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="ColorRect" unique_id=1301830032]
+layout_direction = 3
+layout_mode = 0
+offset_left = 17.0
+offset_top = 1.0
+offset_right = 20.0
+offset_bottom = 2.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="ColorRect/ColorRect4" unique_id=412600001]
+layout_direction = 3
+layout_mode = 0
+offset_top = 4.0
+offset_right = 3.0
+offset_bottom = 5.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect/ColorRect4" unique_id=2040448599]
+layout_direction = 3
+layout_mode = 0
+offset_left = -2.0
+offset_right = -1.0
+offset_bottom = 5.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="ColorRect/ColorRect4" unique_id=482061219]
+layout_direction = 3
+layout_mode = 0
+offset_left = -4.0
+offset_right = -1.0
+offset_bottom = 1.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="ColorRect/ColorRect4/ColorRect5" unique_id=2086405046]
+layout_direction = 3
+layout_mode = 0
+offset_top = 4.0
+offset_right = 3.0
+offset_bottom = 5.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="ColorRect/ColorRect4/ColorRect5/ColorRect4" unique_id=1412383282]
+layout_direction = 3
+layout_mode = 0
+offset_top = -2.0
+offset_right = 3.0
+offset_bottom = -1.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="ColorRect" unique_id=751510541]
+layout_direction = 3
+layout_mode = 0
+offset_left = 11.0
+offset_top = 1.0
+offset_right = 12.0
+offset_bottom = 6.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="ColorRect" unique_id=230960499]
+layout_direction = 3
+layout_mode = 0
+offset_left = 10.0
+offset_top = 1.0
+offset_right = 12.0
+offset_bottom = 2.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="ColorRect/ColorRect6" unique_id=1948359655]
+layout_direction = 3
+layout_mode = 0
+offset_top = 4.0
+offset_right = 2.0
+offset_bottom = 5.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="ColorRect/ColorRect6/ColorRect4" unique_id=1530757814]
+layout_direction = 3
+layout_mode = 0
+offset_top = -2.0
+offset_right = 1.0
+offset_bottom = -1.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="ColorRect/ColorRect6/ColorRect4/ColorRect4" unique_id=1118777154]
+layout_direction = 3
+layout_mode = 0
+offset_left = -1.0
+offset_top = -1.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="ColorRect/ColorRect6/ColorRect4/ColorRect4/ColorRect4" unique_id=96038632]
+layout_direction = 3
+layout_mode = 0
+offset_top = 2.0
+offset_right = 1.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="ColorRect" unique_id=953869554]
+layout_direction = 3
+layout_mode = 0
+offset_left = 5.0
+offset_top = 1.0
+offset_right = 8.0
+offset_bottom = 2.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect7" unique_id=1004440895]
+layout_direction = 3
+layout_mode = 0
+offset_top = 2.0
+offset_right = 3.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect7/ColorRect" unique_id=497850990]
+layout_direction = 3
+layout_mode = 0
+offset_left = 2.0
+offset_top = -2.0
+offset_right = 3.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect7/ColorRect/ColorRect" unique_id=1976203386]
+layout_direction = 3
+layout_mode = 0
+offset_left = -2.0
+offset_right = -1.0
+offset_bottom = 5.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect/ColorRect7" unique_id=1885450073]
+layout_direction = 3
+layout_mode = 0
+offset_left = -2.0
+offset_right = -1.0
+offset_bottom = 5.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="ColorRect/ColorRect7/ColorRect3" unique_id=1026209492]
+layout_direction = 3
+layout_mode = 0
+offset_left = -1.0
+offset_bottom = 1.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect/ColorRect7/ColorRect3/ColorRect7" unique_id=85462729]
+layout_direction = 3
+layout_mode = 0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect/ColorRect7/ColorRect3/ColorRect7/ColorRect2" unique_id=1100451598]
+layout_direction = 3
+layout_mode = 0
+offset_left = -1.0
+offset_top = 1.0
+offset_bottom = 3.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/ColorRect7/ColorRect3/ColorRect7/ColorRect2/ColorRect2" unique_id=1071415467]
+layout_direction = 3
+layout_mode = 0
+offset_top = -2.0
+offset_right = 1.0
+offset_bottom = -1.0
+color = Color(0, 0, 0, 1)
