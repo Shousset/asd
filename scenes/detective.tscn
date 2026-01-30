@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://hdw5djwwjbmo"]
 
 [ext_resource type="Script" uid="uid://bkmlgghv6w31h" path="res://scripts/movimiento_detective/player.gd" id="1_we816"]
-[ext_resource type="Texture2D" uid="uid://7jhleauctla4" path="res://assets/art/detective/movimientos_detective.png" id="2_5gryu"]
+[ext_resource type="Texture2D" uid="uid://cjk6n3wrv8se0" path="res://assets/art/detective/movimientos_detective.png" id="2_5gryu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2w8bi"]
 atlas = ExtResource("2_5gryu")
