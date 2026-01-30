@@ -1,29 +1,21 @@
 extends Area2D
 
-# This adds a slot in the Inspector to drop in different animations
-@export var npc_animations: SpriteFrames
 @export var dialogue_resource: DialogueResource
 @export var dialogue_start: String = "start"
 
-# @onready fetches the nodes as soon as the game starts
+# @onready fetches the node as soon as the game starts
 @onready var prompt = $ColorRect 
-@onready var sprite_node = $AnimatedSprite2D
 
 var is_player_in_range = false
 
 func _ready():
-	if npc_animations:
-		# DUPLICATE the frames so this NPC doesn't share with others
-		sprite_node.sprite_frames = npc_animations.duplicate()
-		sprite_node.play() 
-	
 	body_entered.connect(_on_body_entered)
 	body_exited.connect(_on_body_exited)
 	
+	# 1. This hides the box the very second the game runs
 	prompt.visible = false
 	
 func _on_body_entered(body):
-	# Check for "Detective" (make sure your player node is named exactly this)
 	if body.name == "Detective":
 		is_player_in_range = true
 		# 2. Show the box when the player walks in
