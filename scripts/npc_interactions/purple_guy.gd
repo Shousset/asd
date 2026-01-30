@@ -12,31 +12,37 @@ extends Area2D
 var is_player_in_range = false
 
 func _ready():
+	# Check if we actually assigned animations in the Inspector
 	if npc_animations:
-		# DUPLICATE the frames so this NPC doesn't share with others
+		# .duplicate() makes this specific NPC's frames unique 
+		# so they don't all change at the same time.
 		sprite_node.sprite_frames = npc_animations.duplicate()
 		sprite_node.play() 
 	
+	# Connect signals for player detection
 	body_entered.connect(_on_body_entered)
 	body_exited.connect(_on_body_exited)
 	
+	# Hide the interaction prompt (the box) immediately
 	prompt.visible = false
 	
 func _on_body_entered(body):
-	# Check for "Detective" (make sure your player node is named exactly this)
+	# Make sure your Player node is named exactly "Detective"
 	if body.name == "Detective":
 		is_player_in_range = true
-		# 2. Show the box when the player walks in
 		prompt.visible = true 
 
 func _on_body_exited(body):
 	if body.name == "Detective":
 		is_player_in_range = false
-		# 3. Hide the box when the player walks away
 		prompt.visible = false 
 
 func _input(event):
+	# Trigger dialogue when player is close and presses the accept key (Enter/Space)
 	if is_player_in_range and event.is_action_pressed("ui_accept"):
-		# 4. Hide it while talking so it doesn't cover the dialogue
+		# Hide the prompt so it doesn't overlap the text
 		prompt.visible = false 
-		DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_start)
+		
+		# Ensure the DialogueManager exists (requires the Dialogue Manager plugin)
+		if dialogue_resource:
+			DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_start)
