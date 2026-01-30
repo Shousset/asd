@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://53uhg26jhgd3"
-path="res://.godot/imported/Tileset_Large.png-29a327b57019e4cf534af4ce97b01dd0.ctex"
+uid="uid://c5sf4vq02k6om"
+path="res://.godot/imported/arriba1-14.png.png-a44bf6070e27137be86a0512a51f1670.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/Tileset_Large.png"
-dest_files=["res://.godot/imported/Tileset_Large.png-29a327b57019e4cf534af4ce97b01dd0.ctex"]
+source_file="res://assets/art/detective/arriba1-14.png.png"
+dest_files=["res://.godot/imported/arriba1-14.png.png-a44bf6070e27137be86a0512a51f1670.ctex"]
 
 [params]
 

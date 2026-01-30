@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o458qw5uan5e"
-path="res://.godot/imported/Map_Example.png-09e6483e155c822dc8230d648f2381f1.ctex"
+uid="uid://cfo4jl4ufwe7o"
+path="res://.godot/imported/arriba1-15.png.png-79561f2887f529f264963d2e7bbe8b89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/Map_Example.png"
-dest_files=["res://.godot/imported/Map_Example.png-09e6483e155c822dc8230d648f2381f1.ctex"]
+source_file="res://assets/art/detective/arriba1-15.png.png"
+dest_files=["res://.godot/imported/arriba1-15.png.png-79561f2887f529f264963d2e7bbe8b89.ctex"]
 
 [params]
 
