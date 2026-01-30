@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://ds1hnljb34d18"]
 
 [ext_resource type="Texture2D" uid="uid://dccv1l6golbql" path="res://assets/art/basencp1-7.png.png" id="1_b8exc"]
+[ext_resource type="Script" uid="uid://cj2e5wflurh6t" path="res://scripts/npc_interactions/purple_guy.gd" id="1_w3hwk"]
+[ext_resource type="Resource" uid="uid://cqqy1s2ck084t" path="res://dialogues/PurpleGuyDialog.dialogue" id="2_tr7xw"]
 [ext_resource type="Texture2D" uid="uid://ckfyrcfgyedux" path="res://assets/art/basencp1-8.png.png" id="2_w3hwk"]
 [ext_resource type="Texture2D" uid="uid://c5dwobc6p62m5" path="res://assets/art/basencp1-9.png.png" id="3_tr7xw"]
 
@@ -33,7 +35,19 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_tr7xw"]
+radius = 19.104973
+
+[sub_resource type="LabelSettings" id="LabelSettings_tr7xw"]
+line_spacing = 0.0
+font_size = 6
+font_color = Color(0, 0, 0, 1)
+shadow_size = 0
+
 [node name="PurpleGuy" type="Area2D" unique_id=133418455]
+collision_layer = 3
+script = ExtResource("1_w3hwk")
+dialogue_resource = ExtResource("2_tr7xw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=164271310]
 sprite_frames = SubResource("SpriteFrames_x4nek")
@@ -41,3 +55,15 @@ autoplay = "default"
 frame_progress = 0.41821542
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=89254027]
+shape = SubResource("CircleShape2D_tr7xw")
+
+[node name="Label" type="Label" parent="." unique_id=1170001198]
+texture_filter = 1
+offset_left = -13.0
+offset_top = -28.0
+offset_right = 14.0
+offset_bottom = -10.0
+text = "Hablar 
+[Espacio]"
+label_settings = SubResource("LabelSettings_tr7xw")
+horizontal_alignment = 1
