@@ -3,6 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://dq0ig6hw47nqi" path="res://assets/art/map/castillo.png" id="1_0vka0"]
 [ext_resource type="PackedScene" uid="uid://hdw5djwwjbmo" path="res://scenes/detective.tscn" id="2_a2ps7"]
 [ext_resource type="PackedScene" uid="uid://ds1hnljb34d18" path="res://scenes/purple_guy.tscn" id="3_0vka0"]
+[ext_resource type="Texture2D" uid="uid://d2ng1ske4o4o" path="res://assets/art/basencp1-4.png.png" id="4_jaeu2"]
+[ext_resource type="Texture2D" uid="uid://tvpihn7f60rx" path="res://assets/art/basencp1-5.png.png" id="5_75jji"]
+[ext_resource type="Texture2D" uid="uid://bp6quaea6tws3" path="res://assets/art/basencp1-6.png.png" id="6_kxyy5"]
+[ext_resource type="Texture2D" uid="uid://dd74dndr66p0m" path="res://assets/art/basencp1-1.png (1).png" id="7_6o2rw"]
+[ext_resource type="Texture2D" uid="uid://b84biw4prua2e" path="res://assets/art/basencp1-2.png (1).png" id="8_wd5o3"]
+[ext_resource type="Texture2D" uid="uid://cbf6mux1vl64b" path="res://assets/art/basencp1-3.png (1).png" id="9_06eai"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yi5ae"]
 texture = ExtResource("1_0vka0")
@@ -2026,6 +2032,42 @@ texture = ExtResource("1_0vka0")
 [sub_resource type="TileSet" id="TileSet_vwj67"]
 sources/0 = SubResource("TileSetAtlasSource_yi5ae")
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_6o2rw"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_jaeu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_75jji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_kxyy5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wd5o3"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_6o2rw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_wd5o3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_06eai")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Mundo" type="Node2D" unique_id=343878573]
 
 [node name="Map" type="TileMapLayer" parent="." unique_id=382597658]
@@ -2036,7 +2078,15 @@ tile_set = SubResource("TileSet_vwj67")
 position = Vector2(577, 289)
 
 [node name="PurpleGuy" parent="Map" unique_id=133418455 instance=ExtResource("3_0vka0")]
-position = Vector2(579, 338)
+position = Vector2(578, 347)
+
+[node name="BlueGuy" parent="Map" unique_id=2117869834 instance=ExtResource("3_0vka0")]
+position = Vector2(526, 308)
+npc_animations = SubResource("SpriteFrames_6o2rw")
+
+[node name="BrownGuy" parent="Map" unique_id=917190280 instance=ExtResource("3_0vka0")]
+position = Vector2(529, 272)
+npc_animations = SubResource("SpriteFrames_wd5o3")
 
 [node name="Collisions" type="StaticBody2D" parent="." unique_id=4611969]
 
