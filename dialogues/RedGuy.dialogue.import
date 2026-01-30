@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bstrb4351tv2p"
+path="res://.godot/imported/RedGuy.dialogue-752166561d7fed7c0f952dc6879aa979.tres"
+
+[deps]
+
+source_file="res://dialogues/RedGuy.dialogue"
+dest_files=["res://.godot/imported/RedGuy.dialogue-752166561d7fed7c0f952dc6879aa979.tres"]
+
+[params]
+
+defaults=true

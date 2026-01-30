@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dh7wal612mdga"
+path="res://.godot/imported/CultLider.dialogue-ceee3491f22b70f6c990c5783f919665.tres"
+
+[deps]
+
+source_file="res://dialogues/CultLider.dialogue"
+dest_files=["res://.godot/imported/CultLider.dialogue-ceee3491f22b70f6c990c5783f919665.tres"]
+
+[params]
+
+defaults=true
