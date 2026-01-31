@@ -1,18 +1,25 @@
 [gd_scene format=4 uid="uid://b0nxghvu0tttc"]
 
 [ext_resource type="Texture2D" uid="uid://dq0ig6hw47nqi" path="res://assets/art/map/castillo.png" id="1_0vka0"]
+[ext_resource type="PackedScene" uid="uid://dmhf75e820c13" path="res://scenes/RegularNpcTemplate.tscn" id="2_541k4"]
 [ext_resource type="PackedScene" uid="uid://hdw5djwwjbmo" path="res://scenes/detective.tscn" id="2_a2ps7"]
 [ext_resource type="PackedScene" uid="uid://ds1hnljb34d18" path="res://scenes/npcTemplate.tscn" id="3_0vka0"]
+[ext_resource type="Texture2D" uid="uid://cjlqdv2hvk63t" path="res://assets/art/Npc Sprites/Crown1.png" id="3_c1ejn"]
 [ext_resource type="Texture2D" uid="uid://dd74dndr66p0m" path="res://assets/art/basencp1-1.png (1).png" id="4_6o2rw"]
 [ext_resource type="Texture2D" uid="uid://dccv1l6golbql" path="res://assets/art/basencp1-7.png.png" id="4_35q48"]
+[ext_resource type="Texture2D" uid="uid://i1d6imtd2pb5" path="res://assets/art/Npc Sprites/Crown.png" id="4_vnytd"]
 [ext_resource type="Texture2D" uid="uid://ckfyrcfgyedux" path="res://assets/art/basencp1-8.png.png" id="5_cae5a"]
+[ext_resource type="Texture2D" uid="uid://b4fcu1gt3wog8" path="res://assets/art/Npc Sprites/Phantom1.png" id="5_e6vnd"]
 [ext_resource type="Texture2D" uid="uid://b84biw4prua2e" path="res://assets/art/basencp1-2.png (1).png" id="5_wd5o3"]
+[ext_resource type="Texture2D" uid="uid://bhfrdq3jt3o6j" path="res://assets/art/Npc Sprites/Phantom.png" id="6_2jrhv"]
 [ext_resource type="Texture2D" uid="uid://cbf6mux1vl64b" path="res://assets/art/basencp1-3.png (1).png" id="6_06eai"]
 [ext_resource type="Texture2D" uid="uid://c5dwobc6p62m5" path="res://assets/art/basencp1-9.png.png" id="6_l7i8s"]
 [ext_resource type="Texture2D" uid="uid://d2ng1ske4o4o" path="res://assets/art/basencp1-4.png.png" id="7_m7g0u"]
 [ext_resource type="Texture2D" uid="uid://tvpihn7f60rx" path="res://assets/art/basencp1-5.png.png" id="8_35q48"]
 [ext_resource type="Texture2D" uid="uid://bp6quaea6tws3" path="res://assets/art/basencp1-6.png.png" id="9_cae5a"]
 [ext_resource type="Texture2D" uid="uid://c7oky63tnc8u8" path="res://assets/art/Villano Sprites/villano1.png" id="10_wd5o3"]
+[ext_resource type="Texture2D" uid="uid://bapyeqtfpj1hv" path="res://assets/art/Npc Sprites/Suit1.png" id="19_vnytd"]
+[ext_resource type="Texture2D" uid="uid://cmpxhsfrb1gc3" path="res://assets/art/Npc Sprites/Suit.png" id="20_e6vnd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yi5ae"]
 texture = ExtResource("1_0vka0")
@@ -2053,7 +2060,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_6o2rw"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_l7i8s"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -2071,7 +2078,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_wd5o3"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_w7nu4"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -2118,6 +2125,49 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_541k4"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_c1ejn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vnytd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c1ejn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_e6vnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2jrhv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2jrhv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_vnytd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_e6vnd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Mundo" type="Node2D" unique_id=343878573]
 
 [node name="Map" type="TileMapLayer" parent="." unique_id=382597658]
@@ -2125,7 +2175,7 @@ tile_map_data = PackedByteArray("AAAIAAIAAAAAAAAAAAAIAAMAAAAAAAEAAAAIAAQAAAAAAAI
 tile_set = SubResource("TileSet_vwj67")
 
 [node name="Detective" parent="Map" unique_id=1068191262 instance=ExtResource("2_a2ps7")]
-position = Vector2(579, 574)
+position = Vector2(577, 567)
 
 [node name="PurpleGuy" parent="Map" unique_id=133418455 instance=ExtResource("3_0vka0")]
 position = Vector2(782, 245)
@@ -2133,15 +2183,30 @@ npc_animations = SubResource("SpriteFrames_f7ym0")
 
 [node name="BrownGuy" parent="Map" unique_id=482890661 instance=ExtResource("3_0vka0")]
 position = Vector2(295, 243)
-npc_animations = SubResource("SpriteFrames_6o2rw")
+npc_animations = SubResource("SpriteFrames_l7i8s")
 
 [node name="BlueGuy" parent="Map" unique_id=1643600868 instance=ExtResource("3_0vka0")]
 position = Vector2(250, 502)
-npc_animations = SubResource("SpriteFrames_wd5o3")
+npc_animations = SubResource("SpriteFrames_w7nu4")
 
 [node name="Villain" parent="Map" unique_id=1830462608 instance=ExtResource("3_0vka0")]
 position = Vector2(746, 558)
 npc_animations = SubResource("SpriteFrames_cae5a")
+
+[node name="Npc1" parent="Map" unique_id=1262923084 instance=ExtResource("2_541k4")]
+position = Vector2(473, 249)
+scale = Vector2(0.5, 0.5)
+npc_animations = SubResource("SpriteFrames_541k4")
+
+[node name="Npc2" parent="Map" unique_id=2146628366 instance=ExtResource("2_541k4")]
+position = Vector2(681, 249)
+scale = Vector2(0.5, 0.5)
+npc_animations = SubResource("SpriteFrames_c1ejn")
+
+[node name="Npc3" parent="Map" unique_id=2091099877 instance=ExtResource("2_541k4")]
+position = Vector2(995, 341)
+scale = Vector2(0.5, 0.5)
+npc_animations = SubResource("SpriteFrames_2jrhv")
 
 [node name="Collisions" type="StaticBody2D" parent="." unique_id=4611969]
 visible = false
