@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjsceedfrhwpd"
-path="res://.godot/imported/NPC_4.png-55430288c52c660b8b59602fb4b0774c.ctex"
+uid="uid://cmpxhsfrb1gc3"
+path="res://.godot/imported/Suit.png-7670a2f75ca78b98131956a352ca579a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/NPC_4.png"
-dest_files=["res://.godot/imported/NPC_4.png-55430288c52c660b8b59602fb4b0774c.ctex"]
+source_file="res://assets/art/Npc Sprites/Suit.png"
+dest_files=["res://.godot/imported/Suit.png-7670a2f75ca78b98131956a352ca579a.ctex"]
 
 [params]
 

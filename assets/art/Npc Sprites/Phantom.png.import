@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmjok8cl73fa1"
-path="res://.godot/imported/NPC_Bailarin_16X16.png-75460be117ae881cdd43d6e4dad33ef6.ctex"
+uid="uid://bhfrdq3jt3o6j"
+path="res://.godot/imported/Phantom.png-6865481ebba648834eb5294a074e03e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/NPC_Bailarin_16X16.png"
-dest_files=["res://.godot/imported/NPC_Bailarin_16X16.png-75460be117ae881cdd43d6e4dad33ef6.ctex"]
+source_file="res://assets/art/Npc Sprites/Phantom.png"
+dest_files=["res://.godot/imported/Phantom.png-6865481ebba648834eb5294a074e03e2.ctex"]
 
 [params]
 

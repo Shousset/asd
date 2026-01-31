@@ -38,7 +38,7 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tr7xw"]
 radius = 15.0
 
-[node name="PurpleGuy" type="Area2D" unique_id=133418455]
+[node name="npcTemplate" type="Area2D" unique_id=133418455]
 collision_layer = 3
 script = ExtResource("1_w3hwk")
 dialogue_resource = ExtResource("2_tr7xw")
@@ -46,7 +46,8 @@ dialogue_resource = ExtResource("2_tr7xw")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=164271310]
 sprite_frames = SubResource("SpriteFrames_x4nek")
 autoplay = "default"
-frame_progress = 0.41821542
+frame_progress = 0.70878977
+speed_scale = 0.5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=89254027]
 shape = SubResource("CapsuleShape2D_tr7xw")

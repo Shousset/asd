@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwrgr8emkg8md"
-path="res://.godot/imported/villano1-1.png.png-8503a129f49d5c22db8377430c600315.ctex"
+uid="uid://i1d6imtd2pb5"
+path="res://.godot/imported/Crown.png-09fda9bc868d7462662128acd505d281.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/villano1-1.png.png"
-dest_files=["res://.godot/imported/villano1-1.png.png-8503a129f49d5c22db8377430c600315.ctex"]
+source_file="res://assets/art/Npc Sprites/Crown.png"
+dest_files=["res://.godot/imported/Crown.png-09fda9bc868d7462662128acd505d281.ctex"]
 
 [params]
 
