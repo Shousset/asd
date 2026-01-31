@@ -2032,7 +2032,7 @@ texture = ExtResource("1_0vka0")
 [sub_resource type="TileSet" id="TileSet_vwj67"]
 sources/0 = SubResource("TileSetAtlasSource_yi5ae")
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_l7i8s"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_6o2rw"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -2050,7 +2050,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_f7ym0"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_wd5o3"]
 resource_local_to_scene = true
 animations = [{
 "frames": [{
@@ -2075,18 +2075,18 @@ tile_map_data = PackedByteArray("AAAIAAIAAAAAAAAAAAAIAAMAAAAAAAEAAAAIAAQAAAAAAAI
 tile_set = SubResource("TileSet_vwj67")
 
 [node name="Detective" parent="Map" unique_id=1068191262 instance=ExtResource("2_a2ps7")]
-position = Vector2(577, 289)
+position = Vector2(572, 565)
 
 [node name="PurpleGuy" parent="Map" unique_id=133418455 instance=ExtResource("3_0vka0")]
-position = Vector2(579, 342)
+position = Vector2(782, 245)
 
 [node name="BrownGuy" parent="Map" unique_id=482890661 instance=ExtResource("3_0vka0")]
-position = Vector2(520, 302)
-npc_animations = SubResource("SpriteFrames_l7i8s")
+position = Vector2(295, 243)
+npc_animations = SubResource("SpriteFrames_6o2rw")
 
 [node name="BlueGuy" parent="Map" unique_id=1643600868 instance=ExtResource("3_0vka0")]
-position = Vector2(637, 298)
-npc_animations = SubResource("SpriteFrames_f7ym0")
+position = Vector2(250, 502)
+npc_animations = SubResource("SpriteFrames_wd5o3")
 
 [node name="Collisions" type="StaticBody2D" parent="." unique_id=4611969]
 
