@@ -2,13 +2,17 @@
 
 [ext_resource type="Texture2D" uid="uid://dq0ig6hw47nqi" path="res://assets/art/map/castillo.png" id="1_0vka0"]
 [ext_resource type="PackedScene" uid="uid://hdw5djwwjbmo" path="res://scenes/detective.tscn" id="2_a2ps7"]
-[ext_resource type="PackedScene" uid="uid://ds1hnljb34d18" path="res://scenes/purple_guy.tscn" id="3_0vka0"]
+[ext_resource type="PackedScene" uid="uid://ds1hnljb34d18" path="res://scenes/npcTemplate.tscn" id="3_0vka0"]
 [ext_resource type="Texture2D" uid="uid://dd74dndr66p0m" path="res://assets/art/basencp1-1.png (1).png" id="4_6o2rw"]
+[ext_resource type="Texture2D" uid="uid://dccv1l6golbql" path="res://assets/art/basencp1-7.png.png" id="4_35q48"]
+[ext_resource type="Texture2D" uid="uid://ckfyrcfgyedux" path="res://assets/art/basencp1-8.png.png" id="5_cae5a"]
 [ext_resource type="Texture2D" uid="uid://b84biw4prua2e" path="res://assets/art/basencp1-2.png (1).png" id="5_wd5o3"]
 [ext_resource type="Texture2D" uid="uid://cbf6mux1vl64b" path="res://assets/art/basencp1-3.png (1).png" id="6_06eai"]
+[ext_resource type="Texture2D" uid="uid://c5dwobc6p62m5" path="res://assets/art/basencp1-9.png.png" id="6_l7i8s"]
 [ext_resource type="Texture2D" uid="uid://d2ng1ske4o4o" path="res://assets/art/basencp1-4.png.png" id="7_m7g0u"]
 [ext_resource type="Texture2D" uid="uid://tvpihn7f60rx" path="res://assets/art/basencp1-5.png.png" id="8_35q48"]
 [ext_resource type="Texture2D" uid="uid://bp6quaea6tws3" path="res://assets/art/basencp1-6.png.png" id="9_cae5a"]
+[ext_resource type="Texture2D" uid="uid://c7oky63tnc8u8" path="res://assets/art/Villano Sprites/villano1.png" id="10_wd5o3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yi5ae"]
 texture = ExtResource("1_0vka0")
@@ -2032,6 +2036,23 @@ texture = ExtResource("1_0vka0")
 [sub_resource type="TileSet" id="TileSet_vwj67"]
 sources/0 = SubResource("TileSetAtlasSource_yi5ae")
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_f7ym0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_35q48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cae5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_l7i8s")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_6o2rw"]
 resource_local_to_scene = true
 animations = [{
@@ -2068,6 +2089,35 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_06eai"]
+atlas = ExtResource("10_wd5o3")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7g0u"]
+atlas = ExtResource("10_wd5o3")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35q48"]
+atlas = ExtResource("10_wd5o3")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cae5a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06eai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7g0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35q48")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Mundo" type="Node2D" unique_id=343878573]
 
 [node name="Map" type="TileMapLayer" parent="." unique_id=382597658]
@@ -2075,10 +2125,11 @@ tile_map_data = PackedByteArray("AAAIAAIAAAAAAAAAAAAIAAMAAAAAAAEAAAAIAAQAAAAAAAI
 tile_set = SubResource("TileSet_vwj67")
 
 [node name="Detective" parent="Map" unique_id=1068191262 instance=ExtResource("2_a2ps7")]
-position = Vector2(572, 565)
+position = Vector2(579, 574)
 
 [node name="PurpleGuy" parent="Map" unique_id=133418455 instance=ExtResource("3_0vka0")]
 position = Vector2(782, 245)
+npc_animations = SubResource("SpriteFrames_f7ym0")
 
 [node name="BrownGuy" parent="Map" unique_id=482890661 instance=ExtResource("3_0vka0")]
 position = Vector2(295, 243)
@@ -2088,7 +2139,12 @@ npc_animations = SubResource("SpriteFrames_6o2rw")
 position = Vector2(250, 502)
 npc_animations = SubResource("SpriteFrames_wd5o3")
 
+[node name="Villain" parent="Map" unique_id=1830462608 instance=ExtResource("3_0vka0")]
+position = Vector2(746, 558)
+npc_animations = SubResource("SpriteFrames_cae5a")
+
 [node name="Collisions" type="StaticBody2D" parent="." unique_id=4611969]
+visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collisions" unique_id=1004261242]
 position = Vector2(447.75293, 273.27374)

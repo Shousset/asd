@@ -38,7 +38,7 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tr7xw"]
 radius = 15.0
 
-[node name="PurpleGuy" type="Area2D" unique_id=133418455]
+[node name="npcTemplate" type="Area2D" unique_id=133418455]
 collision_layer = 3
 script = ExtResource("1_w3hwk")
 dialogue_resource = ExtResource("2_tr7xw")
