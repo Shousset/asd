@@ -1,11 +1,60 @@
 ~ start
-NPC 1: [[Wassup gang|Yo how's it going|What's going on fella]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one buddy.
-- Second one
-	Nathan: You picked the second one huh.
-- Start again => start
-- End the conversation => END
-Nathan: See ya.
+~ barman_inicio
+El Barman: (Limpia una copa con excesiva lentitud) No debería estar merodeando por aquí. Los invitados "especiales" se quedan en la pista de baile. [cite: 16]
+
+- El apagón no pareció un accidente técnico. => barman_pista_1
+- Solo busco un trago fuerte para los nervios. => barman_neutral_1
+- [ENCUBIERTO] ¿Quién autorizó el corte de energía? => barman_sospecha_1
+
+~ barman_pista_1
+El Barman: Escuchó el metal caer, ¿verdad? [cite: 26] No fue una copa. Fue algo más... pesado. Cerca de la mesa de los organizadores. [cite: 79]
+=> barman_2
+
+~ barman_neutral_1
+El Barman: El alcohol no borrará lo que vimos en el centro del salón. [cite: 34] Pero tome, por cuenta de la casa.
+=> barman_2
+
+~ barman_sospecha_1
+El Barman: (Se detiene en seco) ¿Autorizó? Qué vocabulario tan... institucional. Usted no habla como un devoto de la máscara. [cite: 60]
+-- set sospecha += 1
+=> barman_2
+
+~ barman_2
+El Barman: Antes de que el cuerpo cayera, alguien susurró algo sobre una lista. [cite: 57]
+
+- ¿Una lista de nombres? => barman_pista_2
+- Los susurros son comunes en fiestas así. => barman_neutral_2
+- Usted estaba muy cerca para oír un susurro. => barman_sospecha_2
+
+~ barman_pista_2
+El Barman: (Callejón vacío) Dicen que el papel estaba manchado. [cite: 53] Pero quizás solo eran deudas de juego. Nada importante.
+=> barman_3
+
+~ barman_neutral_2
+El Barman: Nada aquí es común esta noche. [cite: 15]
+=> barman_3
+
+~ barman_sospecha_2
+El Barman: Mis oídos son mi herramienta de trabajo. No se equivoque conmigo.
+-- set sospecha += 1
+=> barman_3
+
+~ barman_3
+El Barman: Si busca respuestas, mire los ojos de los que no corrieron cuando volvió la luz. [cite: 37]
+
+- La verdad saldrá a la luz. => barman_final_pista
+- La presión está afectando a todos. => barman_final_neutral
+- Usted es uno de los que no se movió. => barman_final_sospecha
+
+~ barman_final_pista
+El Barman: La verdad es un cadáver más en este cuarto. [cite: 35] Busque en el estudio detrás de las cortinas rojas.
+=> END
+
+~ barman_final_neutral
+El Barman: Ojalá el siguiente baile sea más... pacífico.
+=> END
+
+~ barman_final_sospecha
+El Barman: Siga señalando con el dedo y se quedará sin mano. No me hable más.
+-- set sospecha += 1
 => END
